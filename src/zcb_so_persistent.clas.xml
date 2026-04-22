@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCB_SO_PERSISTENT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Base Agent Save data</DESCRIPT>
+    <CATEGORY>11</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_PERSISTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeuge neues persistentes Objekt mit Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_TRANSIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeuge transientes Objekt mit Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CURRENT_SPECIAL_OBJECT_INFO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Aktuelle Klassenspezifische Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELETE_PERSISTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löscht persistentes Objekt mit Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PERSISTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Hole persistentes Objekt mit Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TRANSIENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Ermittle transientes Objekt mit Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_EXTRACT_IDENTIFIER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Extrahiert BKey aus DB-Daten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_GET_ATTRIBUTES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>liest persistente Attribute aus Objekt</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_LOAD_FROM_DATABASE_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>liest über BKey identifizierte Objektdaten von DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_MERGE_IDENTIFIER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fügt DB-Daten BKey zu</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_SAVE_TO_DATABASE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>speichert Objektdaten auf DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_SERIALIZE_BKEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>serialisiert den Business Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MAP_SET_ATTRIBUTES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>setzt persistente Attribute eines Objekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PM_CHECK_AND_SET_ATTRIBUTES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Prüft und setzt persistente Attribute</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PM_CREATE_REPRESENTANT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Erzeuge neues Hüllenobjekt und Verwaltungseintrag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PM_DELETE_PERSISTENT</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Löscht persistentes Objekt von DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PM_LOAD_AND_SET_ATTRIBUTES</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Lädt und setzt persistente Attribute</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SPECIAL_BKEY_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klassenspezifisch: Suchtabelle Business Keys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SPECIAL_OBJECT_INFO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Klassenspezifische Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_BUSINESS_KEY</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_BUSINESS_KEY_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Objektreferenz</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_DB_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilentyp Persistente Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_DB_DATA_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Persistente Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_DB_DELETE_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Identifikatoren zum Löschen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_OBJECT_REF</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Typ eines verwalteten Objekts</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_OBJECT_REF_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Objektreferenz</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_OID</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Typ des generischen Objektidentifikators</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_OID_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Objektidentifikator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_SPECIAL_BKEY_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Suchtabelle Business Keys</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_SPECIAL_OBJECT_INFO</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zeilentyp Klassenspez. Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_SPECIAL_OBJECT_INFO_TAB</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Tabellentyp Klassenspez. Objektdaten</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TYP_TYPE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Typ des Typidentifikators</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_PERSISTENT</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_EXISTING</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_PERSISTENT</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_PERSISTENT</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Neu erzeugtes persistentes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_TRANSIENT</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_EXISTING</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_TRANSIENT</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_TRANSIENT</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Neu erzeugtes transientes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_PERSISTENT</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_EXISTING</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DELETE_PERSISTENT</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PERSISTENT</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PERSISTENT</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PERSISTENT</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Persistentes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TRANSIENT</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TRANSIENT</CMPNAME>
+     <SCONAME>I_VBELN</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TRANSIENT</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Transientes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_EXTRACT_IDENTIFIER</CMPNAME>
+     <SCONAME>E_BUSINESS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>aus DB-Daten extrahierte betriebswirtsch. Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_EXTRACT_IDENTIFIER</CMPNAME>
+     <SCONAME>I_DB_DATA</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Von der DB gelesene Objektdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_GET_ATTRIBUTES</CMPNAME>
+     <SCONAME>E_OBJECT_DATA_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>ausgelesene Objektdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_GET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_OBJECT_REF_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste der betroffenen Objekte</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_LOAD_FROM_DATABASE_KEY</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirt. Schlüssel der zu ladenden Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_LOAD_FROM_DATABASE_KEY</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>von DB gelesene Objektdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_MERGE_IDENTIFIER</CMPNAME>
+     <SCONAME>C_DB_DATA_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Objektdaten, in die Identifikatoren zu mischen sind</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_MERGE_IDENTIFIER</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY_TAB</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liste von betriebswirtsch. Schlüsseln</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SAVE_TO_DATABASE</CMPNAME>
+     <SCONAME>I_DELETES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Schlüssel der zu löschenden Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SAVE_TO_DATABASE</CMPNAME>
+     <SCONAME>I_INSERTS</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Neu anzulegende Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SAVE_TO_DATABASE</CMPNAME>
+     <SCONAME>I_UPDATES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Zu ändernde Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SERIALIZE_BKEY</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Business Key</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SERIALIZE_BKEY</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Business Key als String</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_OBJECT_DATA</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>zu setzende Objektdaten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>MAP_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_OBJECT_REF</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betroffenes Objekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CHECK_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CHECK_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CHECK_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_ID_PROVIDED</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Mit welchen Identifikatoren wurde geladen und geprüft</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CHECK_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_OBJECT_DATA</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Von DB geladene Daten</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CREATE_REPRESENTANT</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_CREATE_REPRESENTANT</CMPNAME>
+     <SCONAME>RESULT</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Neu erzeugtes Hüllenobjekt</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_LOAD_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>CX_OS_OBJECT_NOT_FOUND</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Object Services Exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PM_LOAD_AND_SET_ATTRIBUTES</CMPNAME>
+     <SCONAME>I_BUSINESS_KEY</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Betriebswirtschaftlicher Schlüssel</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

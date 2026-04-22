@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EVENT</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>testing</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ORDER</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Get Sales Informations</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NO_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>No Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NO_HEADER_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>No Header Data</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORDER</CMPNAME>
+     <SCONAME>ES_ORDER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Order Header Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ORDER</CMPNAME>
+     <SCONAME>I_ONO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Order Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NO_HEADER_DATA</CMPNAME>
+     <SCONAME>IV_ONO</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Order Number</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

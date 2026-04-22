@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_TESTEX</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>testing</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>M1</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Method1</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>M1</CMPNAME>
+     <SCONAME>CX_SY_CONVERSION_NO_NUMBER</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>System-Exception bei Umwandlung in eine Zahl</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>M1</CMPNAME>
+     <SCONAME>CX_SY_ZERODIVIDE</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>System-Exception für Teilen durch Null.</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>M1</CMPNAME>
+     <SCONAME>ES_RES</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>String</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>M1</CMPNAME>
+     <SCONAME>INPUT1</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Natürliche Zahl</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>M1</CMPNAME>
+     <SCONAME>INPUT2</SCONAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>String</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
